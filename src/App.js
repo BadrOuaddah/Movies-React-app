@@ -3,7 +3,7 @@ import './App.css';
 import MovieList from './components/MovieList/MovieList';
 
 function App() {
-  const [movie, setMovie] = useState([
+  const [movies, setMovies] = useState([
     {
       "Title": "Star Wars: Episode IV - A New Hope",
       "Year": "1977",
@@ -79,7 +79,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div>
-          <MovieList/>
+          <MovieList movies ={movies}/>
         </div>
       </header>
     </div>

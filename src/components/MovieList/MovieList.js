@@ -1,10 +1,14 @@
 import React from 'react';
 import './MovieList.css';
 
-export default function MovieList() {
-  return (
-    <div>
-      MovieList
-    </div>
-  )
+const MovieList = (props) =>{
+    return(
+        <div>
+            {props.movies.map((movie, index)=> <div>
+                <img src={movie.Poster} alt='movie'/>
+            </div>)}
+        </div>
+    )
 }
+
+export default MovieList;
