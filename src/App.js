@@ -1,9 +1,9 @@
 import { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.css';
 import MovieList from './components/MovieList/MovieList';
 
-function App() {
+const App = () => {
   const [movies, setMovies] = useState([
     {
       "Title": "Star Wars: Episode IV - A New Hope",
@@ -77,14 +77,22 @@ function App() {
   }
   ])
   return (
-    <div className="App">
-      <header className="App-header">
-        <div>
+    <div className='App-color'>
+          <div className='container-fuild' >
+            <div className='row'>
+              <div className='col-sm'>
+                <table>
+                  <th>
           <MovieList movies ={movies}/>
-        </div>
-      </header>
+                  </th>
+                </table>
+              </div>
+            </div>
+          </div>
     </div>
   );
 }
+
+
 
 export default App;
