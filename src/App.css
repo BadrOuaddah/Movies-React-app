@@ -2,7 +2,7 @@ body{
   background-color: #282c34;
 }
 
-.movie-app {
+.movie-app > .row {
   overflow-x: auto;
   flex-wrap: nowrap;
 }
