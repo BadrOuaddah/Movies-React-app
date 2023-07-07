@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import MovieList from "./components/MovieList/MovieList";
 import MovieListHeading from "./components/MovieListHeading/MovieListHeading";
+import SearchBox from "./components/SearchBox/SearchBox";
 
 const App = () => {
   const [movies, setMovies] = useState([]);
@@ -22,7 +23,12 @@ const App = () => {
   return (
     <div className="App-color">
        <div className="Container movie-app">
-       <MovieListHeading/>
+       <div className="row">
+       <MovieListHeading heading='Movies'/>
+       </div>
+       <div>
+       <SearchBox/>
+       </div>
        <div className="row">
         <MovieList movies={movies} />
        </div>

@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
+import './MovieListHeading.css';
 
-export default function MovieListHeading() {
-  return (
-    <div style={{color:'white'}}>
-      MovieListHeading is ready !
-    </div>
-  )
-}
+const MovieListHeading = (props) => {
+  return(
+  <div className="col">
+    <h1>{props.heading}</h1>
+  </div>
+  ) 
+};
+export default MovieListHeading;
