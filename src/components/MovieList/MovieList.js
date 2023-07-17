@@ -10,8 +10,9 @@ const MovieList = (props) => {
         <div className="col-sm-3" key={index} >
           <div className="image-container d-flex justify-content-start m-3">
             <img src={movie.Poster} alt="Movie" />
-            <div className="overlay d-flex align-items-centerjustify-content"></div>
+            <div className="overlay d-flex align-items-centerjustify-content">
             <FavouriteComponent/>
+            </div>
           </div>
         </div>
       ))}
