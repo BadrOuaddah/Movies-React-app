@@ -1,14 +1,12 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import './AddFavourites.css';
-export const AddFavourites = (props) => {
+import React from "react";
+import "./AddFavourites.css";
+
+const AddFavourites = () => {
   return (
-    <div>AddFavourites</div>
-  )
-}
+    <div>
+      <span className="mr-2">Add to Favourites</span>
+    </div>
+  );
+};
 
-const mapStateToProps = (state) => ({})
-
-const mapDispatchToProps = {}
-
-export default connect(mapStateToProps, mapDispatchToProps)(AddFavourites)
+export default AddFavourites;
