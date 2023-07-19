@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-// import { Row, Container, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import MovieList from "./components/MovieList/MovieList";
@@ -47,8 +46,8 @@ const App = () => {
             favouriteComponent={AddFavourites}
           />
         </div>
-        <div className="row d-flex align-items-center mt-4 mb-4">
           <MovieListHeading heading="Favourites" />
+        <div className="row d-flex align-items-center mt-4 mb-4">
           <div className="row">
             <MovieList
               movies={favourites}
