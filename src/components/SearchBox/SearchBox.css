@@ -1,3 +1,23 @@
-div{
-    color: white;
+div {
+  color: white;
+}
+
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  padding: 5px;
+  outline: none;
 }

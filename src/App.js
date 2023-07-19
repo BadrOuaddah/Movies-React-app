@@ -33,7 +33,7 @@ const App = () => {
     <div className="App-color">
       <div className="Container movie-app">
         <div className="row d-flex align-items-center mt-4 mb-4">
-          <MovieListHeading heading="Movies" />
+          <MovieListHeading heading="🎥 Movies" />
           <SearchBox
             searchValue={searchValue}
             setSearchValue={setSearchValue}
@@ -46,7 +46,7 @@ const App = () => {
             favouriteComponent={AddFavourites}
           />
         </div>
-          <MovieListHeading heading="Favourites" />
+          <MovieListHeading heading="❤️ Favourites" />
         <div className="row d-flex align-items-center mt-4 mb-4">
           <div className="row">
             <MovieList

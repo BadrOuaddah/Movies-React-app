@@ -1,8 +1,10 @@
 body{
   background-color: #282c34;
+  scrollbar-width: none;
 }
 
 .movie-app > .row {
+  scrollbar-width: none;
   overflow-x: auto;
   flex-wrap: nowrap;
 }
