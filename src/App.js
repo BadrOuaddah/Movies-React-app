@@ -5,7 +5,7 @@ import MovieList from "./components/MovieList/MovieList";
 import MovieListHeading from "./components/MovieListHeading/MovieListHeading";
 import SearchBox from "./components/SearchBox/SearchBox";
 import AddFavourites from "./components/AddFavourites/AddFavourites.js";
-
+import RemoveFavourites from "./components/RemoveFavourites/RemoveFavourites";
 const App = () => {
   const [movies, setMovies] = useState([]);
   const [favourites, setFavourites] = useState([]);
@@ -23,9 +23,15 @@ const App = () => {
     getMovieRequest(searchValue);
   }, [searchValue]);
 
-  //!!! Put this code on ChatGPT to understand what is mean !!!
   const AddFavouriteMovie = (movie) => {
     const newFavouriteList = [...favourites, movie];
+    setFavourites(newFavouriteList);
+  };
+
+  const RemoveFavouriteMovie = (movie) => {
+    const newFavouriteList = favourites.filter(
+    (favourites) => favourites.imdbID !== movie.imdbID
+    );
     setFavourites(newFavouriteList);
   };
 
@@ -46,15 +52,17 @@ const App = () => {
             favouriteComponent={AddFavourites}
           />
         </div>
+        <div>
           <MovieListHeading heading="❤️ Favourites" />
         <div className="row d-flex align-items-center mt-4 mb-4">
           <div className="row">
             <MovieList
               movies={favourites}
-              handleFavouritesClick={AddFavouriteMovie}
-              favouriteComponent={AddFavourites}
+              handleFavouritesClick={RemoveFavouriteMovie}
+              favouriteComponent={RemoveFavourites}
             />
           </div>
+        </div>
         </div>
       </div>
     </div>
