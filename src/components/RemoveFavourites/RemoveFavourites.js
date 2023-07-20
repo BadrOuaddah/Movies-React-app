@@ -1,5 +1,4 @@
 import React from "react";
-import "./RemoveFavourites.css";
 
 const RemoveFavourites = () => {
   return (
