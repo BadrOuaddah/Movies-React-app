@@ -50,13 +50,28 @@ const App = () => {
 
   return (
     <div className="App-color">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-secondary">
+        <a className="navbar-brand" href="/">Movie app</a>
+
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav mr-auto">
+            <li className="nav-item active">
+              <a className="nav-link" href="/">
+                Home
+              </a>
+            </li>
+          </ul>
+          <form className="form-inline my-2 my-lg-0">
+            <SearchBox
+              searchValue={searchValue}
+              setSearchValue={setSearchValue}
+            />
+          </form>
+        </div>
+      </nav>
       <div className="Container movie-app">
         <div className="row d-flex align-items-center mt-4 mb-4">
           <MovieListHeading heading="🎥 Movies" />
-          <SearchBox
-            searchValue={searchValue}
-            setSearchValue={setSearchValue}
-          />
         </div>
         <div className="row">
           <MovieList
