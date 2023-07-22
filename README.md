@@ -1,10 +1,7 @@
 ## About The Project 
 #### Movie app 🎥
-![Demo 1](https://github.com/BadrOuaddah/Movies-React-app/assets/119801735/67cf921f-4e87-4de7-90dd-9d3d5707a2b3)
-<br/>
-<br/>
-<br/>
-![Demo 2](https://github.com/BadrOuaddah/Movies-React-app/assets/119801735/291f0c6f-3a81-42d3-989f-37bb331ae9b1)
+![movie-gif-min](https://github.com/BadrOuaddah/Movies-React-app/assets/119801735/973486a5-e52f-44ae-86f0-dbba21ac4acc)
+
 
 
 ### Built With
