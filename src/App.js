@@ -30,14 +30,14 @@ const App = () => {
     setFavourites(movieFavourites);
   }, []);
 
-  const saveToLocalStorage = (items) => {
+  const updateLocalStorage = (items) => {
     localStorage.setItem("react-movie-app-favourites", JSON.stringify(items));
   };
 
   const AddFavouriteMovie = (movie) => {
     const newFavouriteList = [...favourites, movie];
-    setFavourites(newFavouriteList);
-    saveToLocalStorage(newFavouriteList);
+    setFavourites(newFavouriteList); 
+    updateLocalStorage(newFavouriteList); //! Update local storage
   };
 
   const RemoveFavouriteMovie = (movie) => {
@@ -45,7 +45,7 @@ const App = () => {
       (favourites) => favourites.imdbID !== movie.imdbID
     );
     setFavourites(newFavouriteList);
-    saveToLocalStorage(newFavouriteList);
+    updateLocalStorage(newFavouriteList); //! Update local storage
   };
 
   return (
