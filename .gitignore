@@ -24,9 +24,15 @@ yarn-error.log*
 
 .idea/
 .vscode/
+node_modules/
+.DS_Store
 *.tgz
 my-app*
 template/src/__tests__/__snapshots__/
 lerna-debug.log
 /.changelog
 .npm/
+.node_repl_history
+.eslintcache
+logs
+*.log
